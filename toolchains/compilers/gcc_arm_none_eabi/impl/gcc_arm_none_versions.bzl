@@ -20,7 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-_WINDOWS = {
+_WINDOWS_9 = {
     "full_version": "9.2.1",
     "remote_compiler": {
         "url": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/9-2020q2/gcc-arm-none-eabi-9-2020-q2-update-win32.zip?revision=95631fd0-0c29-41f4-8d0c-3702650bdd74&la=en&hash=D2C7F7C52183A8818AE6179AB87AA7CF6B1AE275",
@@ -38,9 +38,9 @@ _PLATFORM_SPECIFIC_CONFIGS_9 = {
             "strip_prefix": "gcc-arm-none-eabi-9-2019-q4-major",
         },
     },
-    "windows": _WINDOWS,
-    "windows server 2019": _WINDOWS,
-    "windows 10": _WINDOWS,
+    "windows": _WINDOWS_9,
+    "windows server 2019": _WINDOWS_9,
+    "windows 10": _WINDOWS_9,
     "mac os x": {
         "full_version": "9.2.1",
         "remote_compiler": {
@@ -51,8 +51,38 @@ _PLATFORM_SPECIFIC_CONFIGS_9 = {
     },
 }
 
+
+_WINDOWS_10 = {
+    "full_version": "10.2",
+    "remote_compiler": {
+        "url": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-win32.zip?revision=ffcaa06c-940d-4319-8d7e-d3070092d392&la=en&hash=130196DDF95B0D9817E1FDE08A725C7EBFBFB5B8",
+        "strip_prefix": "",
+    },
+}
+
+_PLATFORM_SPECIFIC_CONFIGS_10 = {
+    "linux": {
+        "full_version": "10.2",
+        "remote_compiler": {
+            "url": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2?revision=ca0cbf9c-9de2-491c-ac48-898b5bbc0443&la=en&hash=68760A8AE66026BCF99F05AC017A6A50C6FD832A",
+            "strip_prefix": "gcc-arm-none-eabi-10-2020-q4-major",
+        },
+    },
+    "windows": _WINDOWS_10,
+    "windows server 2019": _WINDOWS_10,
+    "windows 10": _WINDOWS_10,
+    "mac os x": {
+        "full_version": "10.2",
+        "remote_compiler": {
+            "url": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-mac.tar.bz2?revision=48a4e09a-eb5a-4eb8-8b11-d65d7e6370ff&la=en&hash=8AACA5F787C5360D2C3C50647C52D44BCDA1F73F",
+            "strip_prefix": "gcc-arm-none-eabi-10-2020-q4-major",
+        },
+    },
+}
+
 TOOLCHAIN_VERSIONS = {
     "9": _PLATFORM_SPECIFIC_CONFIGS_9,
+    "10": _PLATFORM_SPECIFIC_CONFIGS_10,
 }
 
 def get_platform_specific_config(version, os_name):
