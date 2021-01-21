@@ -56,6 +56,7 @@ _WINDOWS_10 = {
     "full_version": "10.2",
     "remote_compiler": {
         "url": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-win32.zip?revision=ffcaa06c-940d-4319-8d7e-d3070092d392&la=en&hash=130196DDF95B0D9817E1FDE08A725C7EBFBFB5B8",
+        "sha256": "90057b8737b888c53ca5aee332f1f73c401d6d3873124d2c2906df4347ebef9e",
         "strip_prefix": "",
     },
 }
@@ -65,6 +66,7 @@ _PLATFORM_SPECIFIC_CONFIGS_10 = {
         "full_version": "10.2",
         "remote_compiler": {
             "url": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2?revision=ca0cbf9c-9de2-491c-ac48-898b5bbc0443&la=en&hash=68760A8AE66026BCF99F05AC017A6A50C6FD832A",
+            "sha256": "21134caa478bbf5352e239fbc6e2da3038f8d2207e089efc96c3b55f1edcd618",
             "strip_prefix": "gcc-arm-none-eabi-10-2020-q4-major",
         },
     },
@@ -75,6 +77,7 @@ _PLATFORM_SPECIFIC_CONFIGS_10 = {
         "full_version": "10.2",
         "remote_compiler": {
             "url": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-mac.tar.bz2?revision=48a4e09a-eb5a-4eb8-8b11-d65d7e6370ff&la=en&hash=8AACA5F787C5360D2C3C50647C52D44BCDA1F73F",
+            "sha256": "bed12de3565d4eb02e7b58be945376eaca79a8ae3ebb785ec7344e7e2db0bdc0",
             "strip_prefix": "gcc-arm-none-eabi-10-2020-q4-major",
         },
     },
