@@ -69,8 +69,8 @@ gcc_arm_none_repository = repository_rule(
     _com_gcc_arm_none_repository_impl,
     attrs = {
         "version": attr.string(
-            default = "9",
-            doc = "GCC version, version 9 currently only version supported",
+            default = "10",
+            doc = "GCC version, defaulting to version 10",
             values = TOOLCHAIN_VERSIONS.keys(),
         ),
     },
