@@ -21,7 +21,7 @@ def _openocd_flash_impl(ctx):
         firmware = ctx.file.image.short_path,
         flash_offset = ctx.attr.flash_offset,
         programmer_frequency = ctx.attr.programmer_frequency,
-        transport_string = transport_string,
+        transport = transport_string,
     )
     ctx.actions.write(script, script_content, is_executable = True)
     runfiles = ctx.runfiles(files = [ctx.file._openocd, ctx.file.image])
